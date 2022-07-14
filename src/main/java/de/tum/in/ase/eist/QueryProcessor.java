@@ -31,9 +31,10 @@ public class QueryProcessor {
                     sb2.append(c);
                 }
             }
-//            int num1 = new Integer(sb1.toString());
-//            new Integer(sb2.toString());
-            return "" + sb1 + sb2;
+            int num1 = Integer.parseInt(sb1.toString());
+            int num2 = Integer.parseInt(sb2.toString());
+            int sum = num1 + num2;
+            return "" + sum;
         }
         return "";
     }
